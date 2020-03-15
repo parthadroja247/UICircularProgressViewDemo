@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UICircularProgressViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9M-R2-eJb" userLabel="View-Content">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rM7-cw-I4T" userLabel="Example: 1">
+                                        <rect key="frame" x="24" y="24.000000000000007" width="327" height="106.66666666666669"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLj-1W-hBx">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="40.666666666666664"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5a9-Tq-jTp">
+                                                <rect key="frame" x="0.0" y="56.666666666666671" width="327" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use it as simple progress view" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrP-g9-UTJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="269" height="50"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AjD-DG-HdR" customClass="UICircularProgressView" customModule="UICircularProgressViewDemo" customModuleProvider="target">
+                                                        <rect key="frame" x="277" y="0.0" width="50" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="5XJ-io-PMW"/>
+                                                            <constraint firstAttribute="height" constant="50" id="vAE-5n-IvM"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Rw6-Oy-C0D" userLabel="Example: 1">
+                                        <rect key="frame" x="24" y="154.66666666666666" width="327" height="178.99999999999997"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dDU-SY-7Mq">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="113"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example: 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DY-J3-plH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="40.666666666666664"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Like Google Authenticator.  Use it for OTP generation. Show/Hide Details..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRg-fq-5ZQ" userLabel="Like Google Authenticator.  Use it for OTP generation. Show/Hide Details...">
+                                                        <rect key="frame" x="0.0" y="48.666666666666679" width="327" height="64.333333333333314"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AeB-po-Oft">
+                                                <rect key="frame" x="0.0" y="129.00000000000003" width="327" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4H8-i4-Oag">
+                                                        <rect key="frame" x="0.0" y="0.0" width="269" height="50"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9c-0x-7Or" customClass="UICircularProgressView" customModule="UICircularProgressViewDemo" customModuleProvider="target">
+                                                        <rect key="frame" x="277" y="0.0" width="50" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="Ea0-sR-ohL"/>
+                                                            <constraint firstAttribute="height" constant="50" id="JY9-j4-FTH"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Rw6-Oy-C0D" secondAttribute="trailing" constant="24" id="MWV-IZ-WaZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="rM7-cw-I4T" secondAttribute="trailing" constant="24" id="Tlk-TV-vJW"/>
+                                    <constraint firstItem="Rw6-Oy-C0D" firstAttribute="leading" secondItem="B9M-R2-eJb" secondAttribute="leading" constant="24" id="cpZ-2Q-rLd"/>
+                                    <constraint firstItem="rM7-cw-I4T" firstAttribute="leading" secondItem="B9M-R2-eJb" secondAttribute="leading" constant="24" id="oG3-7y-xyV"/>
+                                    <constraint firstItem="Rw6-Oy-C0D" firstAttribute="top" secondItem="rM7-cw-I4T" secondAttribute="bottom" constant="24" id="rZR-Ep-Hnc"/>
+                                    <constraint firstItem="rM7-cw-I4T" firstAttribute="top" secondItem="B9M-R2-eJb" secondAttribute="top" constant="24" id="tM7-Z6-LCD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="B9M-R2-eJb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RUS-cf-PAU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B9M-R2-eJb" secondAttribute="trailing" id="cdr-XY-R25"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B9M-R2-eJb" secondAttribute="bottom" id="mh4-b9-5oe"/>
+                            <constraint firstItem="B9M-R2-eJb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nrm-tb-0N8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="eg1ProgressView" destination="AjD-DG-HdR" id="0H3-2C-HdA"/>
+                        <outlet property="eg2ProgressView" destination="I9c-0x-7Or" id="RKD-na-eN2"/>
+                        <outlet property="otpLabel" destination="4H8-i4-Oag" id="g96-6r-QaI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="119"/>
+        </scene>
+    </scenes>
+</document>
