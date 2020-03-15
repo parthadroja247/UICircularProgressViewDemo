@@ -13,6 +13,7 @@
 		D5D2460F241E0985006A5342 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D2460D241E0985006A5342 /* Main.storyboard */; };
 		D5D24611241E0986006A5342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D24610241E0986006A5342 /* Assets.xcassets */; };
 		D5D24614241E0986006A5342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D24612241E0986006A5342 /* LaunchScreen.storyboard */; };
+		D5D2461C241E09C5006A5342 /* UICircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D2461B241E09C5006A5342 /* UICircularProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D5D24610241E0986006A5342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5D24613241E0986006A5342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5D24615241E0986006A5342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5D2461B241E09C5006A5342 /* UICircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICircularProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		D5D24606241E0985006A5342 /* UICircularProgressViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D5D24607241E0985006A5342 /* AppDelegate.swift */,
-				D5D24609241E0985006A5342 /* SceneDelegate.swift */,
+				D5D2461D241E12F7006A5342 /* SupportingFiles */,
 				D5D2460B241E0985006A5342 /* ViewController.swift */,
-				D5D2460D241E0985006A5342 /* Main.storyboard */,
-				D5D24610241E0986006A5342 /* Assets.xcassets */,
-				D5D24612241E0986006A5342 /* LaunchScreen.storyboard */,
+				D5D2461B241E09C5006A5342 /* UICircularProgressView.swift */,
 				D5D24615241E0986006A5342 /* Info.plist */,
 			);
 			path = UICircularProgressViewDemo;
+			sourceTree = "<group>";
+		};
+		D5D2461D241E12F7006A5342 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D5D24607241E0985006A5342 /* AppDelegate.swift */,
+				D5D24609241E0985006A5342 /* SceneDelegate.swift */,
+				D5D2460D241E0985006A5342 /* Main.storyboard */,
+				D5D24610241E0986006A5342 /* Assets.xcassets */,
+				D5D24612241E0986006A5342 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				D5D2460C241E0985006A5342 /* ViewController.swift in Sources */,
 				D5D24608241E0985006A5342 /* AppDelegate.swift in Sources */,
+				D5D2461C241E09C5006A5342 /* UICircularProgressView.swift in Sources */,
 				D5D2460A241E0985006A5342 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
