@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "UICircularProgressView",
+        "repositoryURL": "https://github.com/parthadroja247/UICircularProgressView",
+        "state": {
+          "branch": null,
+          "revision": "353e0d27fb1af9a94d72dd23912ceb24d41836e3",
+          "version": "1.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
